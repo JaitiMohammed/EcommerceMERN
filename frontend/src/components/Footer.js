@@ -3,10 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='background_nav'>
       <Container>
         <Row>
-          <Col className='text-center py-3'>Copyright &copy; Butterfuly</Col>
+          <Col className='text-lg-center py-5'>
+            <span style={{ color: "#fff" }}>Copyright &copy; Butterfuly</span>
+          </Col>
         </Row>
       </Container>
     </footer>

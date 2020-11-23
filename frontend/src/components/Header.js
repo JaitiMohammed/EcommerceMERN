@@ -1,14 +1,21 @@
 import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import { Container, Nav, Navbar } from "react-bootstrap";
-
+import logo from "../logo/Logo.png";
 const Header = () => {
   return (
     <header>
-      <Navbar bg='dark' expand='lg' variant='dark' collapseOnSelect>
+      <Navbar
+        className='background_nav'
+        expand='lg'
+        variant='dark'
+        collapseOnSelect
+      >
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>Butterfuly</Navbar.Brand>
+            <Navbar.Brand>
+              <img src={logo} alt='Logo Butterfuly' width='220' />
+            </Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
